@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- METADATA -->
+<head>
+    <title>Document</title>
+    <!-- Icon -->
+    <link rel="icon" href="./assets/Logo.png">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- my css -->
+    <link rel="stylesheet" href="./stylesheets/css-reset.css">
+    <link rel="stylesheet" href="./stylesheets/style.css">
+</head>
+
+<!-- BODY -->
+<!-- Try GROUPING class attributes 
+Order: Main BLOCK Class  other BLOCK Classes   Utility/Design Classes  
+Logical choice to make things look more organized, but they are not fundamental -->
+<body>
+    <header>
+        <h1 class="hidden-content">Boolean Zoom</h1>
+    </header>
+
+    <main>
+        <!-- FLEX-CONTAINER: contains the users -->
+        <div class="main-container   flex flex-wrap">
+            <h2 class="hidden-content">Currently connected users</h2>
+
+            <div class="card">
+                <div class="card__image">
+                    <img src="https://picsum.photos/seed/picsum/400/250" alt="user webcam">
+                    <h3 class="card__user">Sarah Lady</h3>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>
