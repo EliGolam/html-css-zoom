@@ -9,3 +9,8 @@ Added basic HTML structure
 ## V 1.0
 
 Added HTML and CSS structure
+
+## V 2.0
+
+Fixed padding issue
+Added simple hover animation
