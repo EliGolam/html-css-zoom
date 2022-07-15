@@ -9,6 +9,7 @@
     --clr-neutral-white: rgba(246, 242, 233, 1);
     --clr-neutral-black: rgba(25, 25, 25, 1);
     --clr-neutral-black-transparent: rgba(25, 25, 25, .85);
+    --clr-neutral-white-overlay: rgba(255, 255, 255, .1);
     --clr-neutral-grey: rgba(88, 89, 90, 1);
 
     --fontfamily-primary: 'Roboto', Arial, Helvetica, sans-serif;
@@ -69,6 +70,7 @@ body {
     -webkit-font-smoothing: antialiased;  
 
     font: var(--fa-font-solid);
+    margin-right: .5rem;
 }
 
 .social-links > .icon::before,
@@ -92,11 +94,38 @@ body {
 .text-colour-light {color: var(--clr-neutral-white);}
 
 /* BLOCKS: component specific rules */
+header.flex {
+    justify-content: flex-end;
+
+    position: absolute;
+        top: 0;
+    
+        width: 100%;
+    
+    z-index: 2;
+}
+
+.header__info .icon {
+    padding: .5rem 1.2rem;
+    background-color: var(--clr-neutral-black-transparent);
+
+    font-size: var(--fontsize-small);
+}
+
+.speaker::before {
+    font-size: inherit;
+    content: '\f58d';
+}
+
+.enlarge::before {
+    content: '\f31e';
+}
+
 .main-container {
     height: 90vh;
     overflow: auto;
 
-    padding: var(--general-gap);
+    padding: 3rem var(--general-gap);
 
     /* flex-container */
     gap: var(--general-gap);
@@ -173,8 +202,6 @@ footer {
 
 .options .icon:hover { 
     transform:scale(1.5); 
-    box-shadow: inset 0 -30px 12px -16px var(--clr-primary-transparent);
-    border-radius: 50%;
 }
 
 .mic-toggle::before { content: '\f130'; }
@@ -202,7 +229,7 @@ footer {
 .end-meeting {
     padding: 2rem;
     border: none;
-    background-color: rgba(255, 255, 255, .1);
+    background-color:  var(--clr-neutral-white-overlay);
     color: inherit;
 
     transition:color .5s ease;
