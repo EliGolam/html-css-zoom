@@ -12,5 +12,9 @@ Added HTML and CSS structure
 
 ## V 2.0
 
-Fixed padding issue
+Fixed padding issue  
 Added simple hover animation
+
+## V 2.1
+
+Added hover animation on the user cards

@@ -111,6 +111,16 @@ body {
     position: relative;
 }
 
+.card__image {
+    transition: transform .6s ease;
+}
+
+.card__image:hover {
+    cursor: pointer;
+
+    transform: scale(1.4);
+}
+
 .card__user {
     position: absolute;
         bottom: 0;
